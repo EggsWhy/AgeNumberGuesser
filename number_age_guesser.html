@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="smart_guy_meme.png">
+    <title>I can guess your age and the number you are thinking of</title>
+
+</head>
+<body>
+    <h1 style="text-align: center;">I can guess what you are thinking of</h1>
+    <h3 style="text-align: center;">You will need a calculator for this to ensure i am not cheating</h3>
+    <a style="text-align: center;" href="https://www.calculator.net/" target="_blank"><h3>Link to calculator</h3></a>
+    <hr>
+
+    <label>The steps</label>
+    <ol>
+        <li>Think of a number from 1 to 10</li>
+        <li>Multiply by 2</li>
+        <li>Add 5</li>
+        <li>Times 50</li>
+        <li>Has your birthday passed this year?</li> 
+
+        <input type="radio" id="yesRadio" name="yesno"> 
+        <label for="yesRadio">Yes</label>
+
+        <input type="radio" id="noRadio" name="yesno"> 
+        <label for="noRadio">No</label>
+
+        <li>Minus your birthyear from the answer</li>
+        <li>Key in your final answer</li>
+    </ol>
+
+    <label>Enter your answer:</label>
+    <input type="number" id="myText">
+    <button id="mySubmit">Submit</button>
+    
+    <p id="error"></p>
+    <p id="yourNumber">Your number is:</p>
+    <p id="yourAge">Your age is:</p>
+
+    <script src="number_age_guesser.js"></script>
+</body>
+</html>
